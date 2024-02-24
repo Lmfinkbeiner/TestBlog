@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Table</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            table{
+                border: 4px solid darkolivegreen;
+                border-radius: 5px;
+                padding: 20px 30px;
+                margin: 20px 20px;
+                align-items: center;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="data.html" method="post">
+            <h1>Asshole | Angel Counter</h1>
+                <input type = "hidden" name = "recipient"
+                value = "deitel@deitel.com">
+                <input type = "hidden" name = "subject" 
+                value = "Feedback Form">
+                <input type = "hidden" name = "redirect" 
+                value = "main.html"> 
+            <table>
+                <tr>
+                    <td><label>Asshole
+                       <input name = "type" type = "radio"
+                          value = "5" checked></label>
+                    <label>Angel
+                       <input name = "type" type = "radio" 
+                          value = "4"></label> 
+                </tr>
+                <tr>
+                    <td><label for="post"> What'd he do: </label></td>
+                    <td><textarea name = "note"
+                        rows = "4" cols = "36"></textarea></td>  
+                </tr>  
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" formaction="/data.html">Upload</button></td>
+                    <td><input type = "reset" value = "Clear">
+                    </td>
+                </tr>
+            </table>
+        <form method="post" enctype="multipart/form-data" action="/data.html">
+            <h1>Upload Image</h1>
+            <input type="hidden">
+        <table>
+
+            <tr>
+                <td><strong><label for="file">File: </label></strong></td>
+                <td><input id="file" name="file" type="file"></td>
+            </tr>
+            <tr>
+                <td><strong><label for="caption"> Caption: </label></strong></td>
+                <td><input type="text" id="caption" name="caption"></td>  
+            </tr>  
+            <tr>
+                <td><strong><label for="date">Date:</label></strong></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>            
+                <td><strong>Toe's Mood:</strong><br></td>
+                <td><label>Cute
+                   <input name = "mood" type = "checkbox" 
+                      value = "Design"></label>
+                <label>Angry
+                   <input name = "mood" type = "checkbox" 
+                      value = "Links"></label>
+                <label>Begging
+                   <input name = "mood" type = "checkbox" 
+                      value = "Ease"></label> 
+                <label>Dramatic 
+                   <input name = "mood" type = "checkbox" 
+                      value = "Images"></label>
+                <label>Playful
+                   <input name = "mood" type = "checkbox" 
+                      value = "Code"></label></td>
+             </tr>
+             <tr>
+                <td><strong>Rating:</strong></td>
+    
+                <td><label>5
+                   <input name = "rating" type = "radio"
+                      value = "5" checked></label>
+                <label>4
+                   <input name = "rating" type = "radio" 
+                      value = "4"></label> 
+                <label>3
+                   <input name = "rating" type = "radio" 
+                      value = "3"></label>
+                <label>2
+                   <input name = "rating" type = "radio" 
+                      value = "2"></label>
+                <label>1
+                   <input name = "rating" type = "radio" 
+                      value = "1"></label></td>
+                </tr>
+            <tr>
+                <td><strong><label for"user"> Passkey: </label></strong></td>
+                <td>
+                    <input name = "user" type = "password"  size = "25">
+                </td>
+            </tr>                
+                <td></td>
+                <td><button type="submit" formaction="/data.html">Upload</button></td>
+            </tr>
+        </table>
+        </form>
+        <form action="data.html" method="post">
+            <h1>Upload Text Post</h1>
+                <input type = "hidden" name = "recipient"
+                value = "deitel@deitel.com">
+                <input type = "hidden" name = "subject" 
+                value = "Feedback Form">
+                <input type = "hidden" name = "redirect" 
+                value = "main.html"> 
+            <table>
+                <tr>
+                    <td><label for="Title">Title: </label></td>
+                    <td><input id="text" name="title" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="post"></label></td>
+                    <td><textarea name = "comments"
+                        rows = "4" cols = "36"></textarea></td>  
+                </tr>  
+                <tr>
+                    <td><label for="date">Date:</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" formaction="/data.html">Upload</button></td>
+                    <td><input type = "reset" value = "Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--Display Pic Posts-->
+
+<html>
+    <head>
+        <title>x</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style>
+            .pic{
+                max-width: 100%;
+                height: auto;
+                float: left;  
+                border-radius: 4px;
+            }
+
+            .caption {
+                text-align: center;
+                padding: 10px 20px;
+                background-color: aliceblue;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 50px;
+
+            }
+        </style>
+        <p><label>Sort
+            <select name = "Sort">
+            <option selected>Sort By</option>
+            <option>Rating</option>
+            <option>Mood</option>
+            <option>Date (oldest) </option>
+            <option>Date (newest) </option>
+            <option>Most Recent</option>
+            </select>
+            </label></p>
+    </head> 
+    <body>
+        <div class="post">
+            <div class="pic">
+            <img src="images/toe1.jpg" width="100%">
+            <div class="caption">
+                <p> This is Toe</p>
+            </div>
+        </div></div>
+        <div class="post">
+            <div class="pic">
+            <img src="images/SleepyToe.jpg"width="100%">
+            <div class="caption">
+                <p> He is a very good boy </p>
+            </div></div></div>
+        <div class="post">
+            <div class="pic">
+                <img src="images/BattleToe.jpg"width="100%">
+                <div class="caption">
+                <p> He likes to play MMA fighter</p>
+                </div></div></div>
+        <div class="post">
+            <div class="pic">
+                <img src="images/ToeWater.jpg"width="100%">
+                <div class="caption">
+                <p> He loves to watch water move </p>
+            </div></div></div>
+        <div class="post">
+            <div class="pic">
+                <img src="images/ToeBox.jpg"width="100%">
+                <div class="caption">
+                <p> and be a problem </p>
+            </div> </div> </div>
+</body>
+</html>
